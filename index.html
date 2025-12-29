@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Author: Serhii Ivanchuk, 000818168, Assignment 5, 31.03.2022, index.html-->
+  <!-- Assignment 5, SVG, JavaScript DOM manipulations-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG, JavaScript DOM manipulations</title>
+    <link rel="stylesheet" href="pagestyle.css" />
+  </head>
+  <body>
+    <svg id="svg-canvas">
+      <text x="20" y="35" class="score-label shadowed">Score: 0</text>
+      <text x="640" y="35" id="exit-btn" class="score-label shadowed">
+        Exit
+      </text>
+    </svg>
+
+    <svg id="svg-menu">
+      <path id="menu-path" fill="none" d="M21,262 c89,-211 344,-216 437,-6" />
+
+      <text class="menu-text shadowed" transform="translate(50,60)">
+        <textPath href="#menu-path" startOffset="50%">Brick Breaker</textPath>
+      </text>
+
+      <path id="score-path" fill="none" d="M49,201 c40,181 331,175 375,-3" />
+      <text class="menu-text shadowed" transform="translate(200,-40)">
+        <textPath id="score-text" href="#score-path" startOffset="50%">
+          Choose Level
+        </textPath>
+      </text>
+
+      <path id="desc-path" fill="none" d="M18,253 c201,20.5 211,-29.5 460,-4" />
+      <text class="desc-text shadowed" transform="translate(110,110)">
+        <textPath id="desc-textr" href="#desc-path">
+          Move platform with mouse / Click to change width
+        </textPath>
+      </text>
+
+      <text id="start-one" x="100" y="450" class="level-button">Level 1</text>
+      <text id="start-two" x="500" y="450" class="level-button">Level 2</text>
+    </svg>
+
+    <script src="pagescript.js"></script>
+  </body>
+</html>

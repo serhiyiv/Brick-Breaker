@@ -1,0 +1,84 @@
+/* Author: Serhii Ivanchuk, 000818168, Assignment 4, 31.03.2022, pagestyle.css , styles sheet*/
+/* Assignment 5, SVG, JavaScript DOM manipulations*/
+
+#svg-canvas {
+  width: 700px;
+  height: 500px;
+  background-color: #002a7f;
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  filter: drop-shadow(3px 2px 2px black);
+}
+
+.brick {
+  filter: drop-shadow(3px 2px 2px black);
+}
+
+.brick-animate {
+  animation: blink 0.5s linear;
+}
+
+.ball {
+  filter: drop-shadow(3px 2px 2px black);
+}
+
+@keyframes blink {
+  0% {
+    filter: brightness(200%);
+  }
+  50% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(200%);
+  }
+}
+
+#svg-menu {
+  width: 700px;
+  height: 500px;
+  background-color: #002a7f;
+  display: block;
+}
+
+.menu-text {
+  font-size: 50px;
+  text-align: center;
+  text-anchor: middle;
+  font-family: fantasy;
+  fill: dodgerblue;
+}
+
+.level-button {
+  font-size: 30px;
+  text-align: center;
+  font-family: fantasy;
+  fill: dodgerblue;
+}
+
+.start-hover {
+  fill: white;
+}
+
+.desc-text {
+  font-size: 20px;
+  font-family: fantasy;
+  fill: dodgerblue;
+}
+.score-label {
+  font-size: 20px;
+  font-family: fantasy;
+  fill: white;
+}
+.shadowed {
+  filter: drop-shadow(3px 2px 2px black);
+}
